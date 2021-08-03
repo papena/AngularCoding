@@ -1,0 +1,14 @@
+<div>
+
+   <h1>*****************Welcome to Home Page*********</h1> 
+   <h2>Hello {{name}} </h2>
+   <div>
+    <h2>Parent text box </h2>
+    <input type="text"   name="exampleInputEmails1" #email="ngModel" [(ngModel)]="name" class="form-control"   id="exampleI4nputEmail1" placeholder="Enter Name">
+
+</div>
+<div>
+    <h2>Child text box </h2>
+       <app-textbox [textvalue]='name' (buttonClick)="onchildclick($event)"></app-textbox>
+   </div>
+</div>
